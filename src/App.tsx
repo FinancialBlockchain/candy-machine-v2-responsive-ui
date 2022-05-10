@@ -38,7 +38,7 @@ const network = process.env.REACT_APP_SOLANA_NETWORK as WalletAdapterNetwork;
 const rpcHost = process.env.REACT_APP_SOLANA_RPC_HOST!;
 const connection = new anchor.web3.Connection(rpcHost);
 
-const txTimeout = 30000; // milliseconds (confirm this works for your project)
+const txTimeout = 60000; // milliseconds (confirm this works for your project)
 
 const theme = createTheme({
     palette: {

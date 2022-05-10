@@ -180,7 +180,7 @@ const BorderLinearProgress = styled(LinearProgress)`
   border: 2px solid white;
   box-shadow: 5px 5px 40px 5px rgba(0,0,0,0.5);
   background-color:var(--main-text-color) !important;
-  
+
   > div.MuiLinearProgress-barColorPrimary{
     background-color:var(--title-text-color) !important;
   }
@@ -505,7 +505,7 @@ const Home = (props: HomeProps) => {
                 setAlertState({
                     open: true,
                     message: 'Congratulations! Mint succeeded!',
-                    severity: 'success',
+                    severity: 'error',
                 });
 
                 // update front-end amounts
@@ -514,7 +514,7 @@ const Home = (props: HomeProps) => {
                 setAlertState({
                     open: true,
                     message: 'Mint failed! Please try again!',
-                    severity: 'error',
+                    severity: 'success',
                 });
             }
         }
@@ -588,11 +588,11 @@ const Home = (props: HomeProps) => {
                 <MintContainer>
                     <DesContainer>
                         <NFT elevation={3}>
-                            <h2>My NFT</h2>
+                            <h2>Mint a Billionaire SolBear</h2>
                             <br/>
                             <div><Price
                                 label={isActive && whitelistEnabled && (whitelistTokenBalance > 0) ? (whitelistPrice + " " + priceLabel) : (price + " " + priceLabel)}/><Image
-                                src="cool-cats.gif"
+                                src="SolBear.gif"
                                 alt="NFT To Mint"/></div>
                             <br/>
                             {wallet && isActive && whitelistEnabled && (whitelistTokenBalance > 0) && isBurnToken &&
