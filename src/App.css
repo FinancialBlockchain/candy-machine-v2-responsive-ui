@@ -9,7 +9,15 @@
 
 body{
 /*  background-color:var(--main-background-color);*/
-  background: url("img/yBwf8X.jpeg");
+  background: url("images/yBwf8X.jpeg");
+  background-size: cover;
+  font-family: 'Copperplate', cursive;
+  font-size: 1.4em;
+}
+
+body1{
+  /*  background-color:var(--main-background-color);*/
+  background: url("images/SolBear.gif");
   background-size: cover;
   font-family: 'Copperplate', cursive;
   font-size: 1.4em;
